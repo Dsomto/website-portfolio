@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+       <div class="logo">
+          Okoma Somtochukwu
+       </div>
+       <div>
+          <ul class="nav-links">
+             <li><a href="#about">About</a></li>
+             <li><a href="#experience">Experience</a></li>
+             <li><a href="#projects">Projects</a></li> 
+             <li><a href="#certifications">Certifications</a></li>
+             <li><a href="#contact">Contact</a></li>
+          </ul>
+       </div>
+    </nav>
+    <nav id="hamburger-nav">
+       <div class="logo"> Okoma Somtochukwu</div>
+       <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+             <span></span>
+             <span></span>
+             <span></span>
+          </div>
+          <div class="menu-links">
+             <li><a href="#about" onclick="toggleMenu()">About</a></li>
+             <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+             <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+             <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+       </div>
+    </nav>
+    <section id="profile">
+       <div class="section__pic-container">
+          <img src="./assets/hallo.png" alt="Okoma Somtochukwu Profile Picture">
+       </div>
+       <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Okoma Somtochukwu</h1>
+          <p class="section__text__p2"><i>Your trusted Cybersecurity Professional</i></p>
+          <div class="btn-container">
+             <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+             Download CV
+             </button>
+             <button class="btn btn-color-1" onclick="location.href='./#contact'">
+             Contact Info
+             </button>
+          </div>
+          <div id="socials-container">
+             <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://linkedin.com/in/somtochukwu-okoma'">
+             <img src="./assets/twitter design.png" alt="My X profile" class="icon" onclick="location.href='https://X.com/'">
+          </div>
+       </div>
+    </section> <!-- Added missing closing tag for the profile section -->
+    <section id="about">
+       <p class="section__text__p1">Can't Wait for You To Know More</p>
+       <h1 class="title">About Me!!!</h1>
+       <div class="section-container">
+          <div class="section__pic-container">
+             <img src="./assets/image.png" alt="Profile picture" class="about-pic">
+          </div>
+          <div class="about-details-container">
+             <div class="about-containers">
+                <div class="details-container">
+                   <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                   <h3>Experience</h3>
+                   <p>1+ years <br>Cybersecurity Professional</p>
+                </div>
+                <div class="details-container">
+                    <img src="./assets/education.png" alt="Education icon" class="icon">
+                    <h3>Certifications</h3>
+                    <a href="#certifications" class="cert-link">
+                        <p>
+                            CompTIA Security+ (SY0-701) <br>
+                            <br>
+                            Certified in Ethical Hacking <br>
+                            
+                        </p>
+                    </a>
+                </div>
+             </div>
+             <div class="text-container">
+                <p>
+                    Hello, I'm <strong>Okoma Somtochukwu</strong>—a passionate and dedicated cybersecurity professional 
+                    with certifications in <em>Cyber Security</em> from Google and <em>Ethical Hacking</em> from Cisco. 
+                    I thrive on securing digital landscapes, tackling real-world security challenges, and constantly learning 
+                    to stay ahead of evolving threats. With hands-on experience in CTF competitions and practical security 
+                    assessments, I'm committed to making the online world a safer place for everyone and for <strong>YOU</strong>. Let’s connect and 
+                    build a secure digital future together!
+                </p>
+             </div>
+          </div>
+       </div>
+       <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Red Team</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                  <div>
+                    <h3>Reconnaissance</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                  <div>
+                    <h3>Social Engineering</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                  <div>
+                    <h3>Penetration Testing</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                  <div>
+                    <h3>Privilege Escalation</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                  <div>
+                    <h3>Tools and Frameworks</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                  <div>
+                    <h3>Exploitation Techniques</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h1 class="experience-sub-title1">Blue Team</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                  <div>
+                    <h3>Incident Response</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                  <div>
+                    <h3>Log Analysis</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                  <div>
+                    <h3>Threat Detection</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                  <div>
+                    <h3>Vulnerability Management</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                    <div>
+                      <h3>Network Security</h3>
+                      <p>Intermediate</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                    <div>
+                      <h3>Endpoint Security</h3>
+                      <p>Basic</p>
+                    </div>
+                  </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+      </section>
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+              </div>
+              <h2 class="experience-sub-title project-title">Project One</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                  Github
+                </button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+              </div>
+              <h2 class="experience-sub-title project-title">Project Two</h2>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                  Github
+                </button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+      </section>
+      <section id="certifications">
+        <h1 class="title">Certifications</h1>
+        <div class="certification-container">
+            <div class="certification">
+                <div class="certification-header">
+                    <img src="./assets/image copy.png" alt="Google" class="company-logo">
+                    <h2 class="certification-title">Google Cyber Security Certification</h2>
+                </div>
+                <p class="certification-details">Issued by Google in October 2024</p>
+                <p class="certification-description">This certification covers fundamental cybersecurity skills, including security fundamentals, threat detection, incident response, risk management, and network security.</p>
+                <a href="link-to-certification" class="certification-link">View Certification</a>
+            </div>
+            <div class="certification">
+                <div class="certification-header">
+                    <img src="./assets/image copy 2.png" alt="Cisco" class="company-logo">
+                    <h2 class="certification-title">Cisco Certified Ethical Hacker (CCEH)</h2>
+                </div>
+                <p class="certification-details">Issued by Cisco in August 2024</p>
+                <p class="certification-description">This certification provides a comprehensive understanding of ethical hacking methodologies and tools. Skills include penetration testing, vulnerability assessments, and risk management, preparing learners to identify and mitigate security threats.</p>
+                <a href="link-to-certification" class="certification-link">View Certification</a>
+            </div>
+            <div class="certification">
+                <div class="certification-header">
+                    <img src="./assets/image copy 3.png" alt="ISC² Logo" class="company-logo">
+                    <h2 class="certification-title">ISC² Certified in Cybersecurity (CC)</h2>
+                </div>
+                <p class="certification-details">Issued by ISC² in October 2024</p>
+                <p class="certification-description">This foundational certification covers essential cybersecurity concepts, enabling candidates to demonstrate their knowledge in cybersecurity principles, security controls, and incident response.</p>
+                <a href="https://www.isc2.org/Certifications/Certified-in-Cybersecurity" class="certification-link">View Certification</a>
+            </div>
+            <div class="certification">
+                <div class="certification-header">
+                    <img src="./assets/image copy 4.png" alt="TryHackMe" class="company-logo">
+                    <h2 class="certification-title">TryHackMe - Cybersecurity Certifications</h2>
+                </div>
+                <p class="certification-details"></p>
+                <p class="certification-description"><p>Successfully completed the comprehensive introductory path for cybersecurity, which provided a robust understanding of core principles and methodologies in the field. This journey encompassed various critical domains, including:</p>
+                <ul>
+                    <li><strong>Web Application Security:</strong> Gained in-depth knowledge of common web vulnerabilities and learned to apply effective security measures.</li>
+                    <li><strong>Network Security:</strong> Developed skills in securing network infrastructures, understanding protocols, and defending against network attacks.</li>
+                    <li><strong>Privilege Escalation:</strong> Acquired techniques for identifying and exploiting privilege escalation vulnerabilities in systems.</li>
+                    <li><strong>Security Operations Center (SOC):</strong> Explored the functions and operations of a SOC, including incident detection, response, and management.</li>
+                    <li><strong>Cloud Security:</strong> Learned the essential practices for securing cloud environments and understanding shared responsibility models.</li>
+                    <li><strong>Ethical Hacking:</strong> Developed practical skills in ethical hacking, including reconnaissance, scanning, and exploitation techniques.</li>
+                </ul>
+                <p>This certificate demonstrates my commitment to continuous learning and practical application in cybersecurity.</p>
+                <p>For a detailed breakdown of my completed paths and modules, please refer to my <a href="[Google Drive Link]" style="color: blue; text-decoration: underline;" target="_blank">Google Drive link</a>.</p>
+                
+            <!-- Add more certification blocks here -->
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contacts'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+            <p><a href="mailto:okomasomto@gmail.com">Example@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+            <p><a href="https://linkedin.com/in/somtochukwu-okoma">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#certifications">Certifications</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright © 2024 Somto Okoma. All Rights Reserved.</p>
+      </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
